@@ -293,3 +293,9 @@ for (i in infoTables_10$Tables){
 }
 
 colnames(Index_WOE) <- c("Variable","Bin", names(infoTables_10$Tables[[1]])[2:5])
+
+#get the final data
+clustered_data = woe_data_ided[,c(3,7,10,14,15,16,17,18,19,22)]
+
+#make another correlation plot
+corrplot(cor(clustered_data), order="hclust", hclust.method = "ward" )
