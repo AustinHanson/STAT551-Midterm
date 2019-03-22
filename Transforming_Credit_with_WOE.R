@@ -93,10 +93,6 @@ new_data_to_woe <- function(WOE_lists, new_data){
   
 }
 
-###################################################################################
-###################### Beginning of Analysis  #####################################
-###################################################################################
-
 #perform kmeans clustering on WOE data
 
 WOEClust_kmeans<-function(WOE_df,id,target,num_clusts){
@@ -194,7 +190,9 @@ WOEClust_hclust<-function(WOE_df,id,target,num_clusts,method='ward.D', IV){
   return(Memberships)
 }
 
-
+###################################################################################
+###################### Beginning of Analysis  #####################################
+###################################################################################
 
 
 #read in our data
